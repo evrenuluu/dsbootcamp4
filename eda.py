@@ -82,6 +82,17 @@ def num_summary(dataframe, numerical_col, plot=False):
 #############################################
 
 def target_summary_with_cat(dataframe, target, categorical_col):
+
+    """
+    target_summary_with_cat
+
+    :param dataframe:
+    :param target:
+    :param categorical_col:
+    :return:
+
+    """
+
     print(pd.DataFrame({"TARGET_MEAN": dataframe.groupby(categorical_col)[target].mean()}), end="\n\n\n")
 
 
